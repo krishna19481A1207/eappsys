@@ -1,0 +1,22 @@
+package eappsys;
+
+public class fraction_to_oct {
+
+	public static void main(String args[])
+	{
+		
+	
+	double n = 0.525;
+     n=n*8;
+	System.out.println(Math.floor(n));
+	System.out.println(n);		
+	System.out.println(Math.ceil(n));	
+	System.out.println(Math.round(n));
+	System.out.println(Math.nextUp(n));
+	System.out.println(Math.nextAfter(n, 5));
+	System.out.println(Math.nextAfter(n, 3));
+
+
+	
+	}
+}
