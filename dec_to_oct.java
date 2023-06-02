@@ -1,10 +1,16 @@
 package eappsys;
 
+import java.util.*;
+112
+
 public class dec_to_oct {
     
     public static void main(String args[])
     {
-    int n= 112;
+    	Scanner s = new Scanner(System.in); 
+    	System.out.println("enter Any number");
+    		     int n = s.nextInt();
+    
     
             StringBuilder c = new StringBuilder();
             
