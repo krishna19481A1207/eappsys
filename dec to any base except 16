@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class dec_to_anybase_except_16_hex {
+	
+	
+	public static void main(String args[] )
+	{
+	Scanner s = new Scanner(System.in); 
+	
+	System.out.println("enter Any number");
+	
+		     int n = s.nextInt();
+    System.out.println("enter target base ");
+    
+    int t = s.nextInt();
+    
+int i=1, sum=0 ;
+
+while(n != 0)
+{
+    int r = n%t;
+    n = n/t;
+   sum = sum + i*r; 
+    i=i*10;
+ }
+
+System.out.print(sum);
+
+}
+}
