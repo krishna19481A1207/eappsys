@@ -1,0 +1,28 @@
+import java.util.*;
+
+
+public class dec_to_hex {
+    
+    public static void main(String args[])
+    {
+    	Scanner s = new Scanner(System.in); 
+    	System.out.println("enter Any number");
+    		     int n = s.nextInt();
+    
+    
+            StringBuilder c = new StringBuilder();
+            char h[] = {'A','B','C','D','E','F'};
+            
+   
+    while(n != 0)
+    {
+        int r = n%16;
+        n = n/16;
+        if(r>9) c.append(h[r-10]);
+        else c.append(r);
+     
+    }
+    System.out.print(c.reverse().toString());
+    
+    }
+}
